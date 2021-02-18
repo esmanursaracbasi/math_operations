@@ -11,8 +11,8 @@ int main()
   d = b*b - 4*a*c;
 
   if (d < 0) { // complex roots, i is for iota (√-1, square root of -1)
-    printf("First root = %.2lf + i%.2lf\n", (double)(2*a), sqrt(-d)/(2*a));     // burayı değiştirdim
-    printf("Second root = %.2lf - i%.2lf\n", -b/(double)(2*a), sqrt(-d)/(2*a));
+    printf("First root = %.2lf + i%.2lf\n", (double)(2*a), sqrt(-d)/(2*a));     // burayı değiştirdim sonuç yanlış
+    printf("Second root = %.2lf - i%.2lf\n", (double)(2*a), sqrt(-d)/(2*a));
   }
   else { // real roots
     root1 = (-b + sqrt(d))/(2*a);
